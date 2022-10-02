@@ -30,6 +30,7 @@
         <th>수량</th>
       </tr>
       </thead>
+
       <tbody>
       <tr th:each="item: ${items}">
         <td><a href="item.html" th:href="@{/basic/items/{itemId}(itemId=${item.id})}" th:text="${item.id}">회원id</a></td>
